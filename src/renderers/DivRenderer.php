@@ -316,6 +316,7 @@ class DivRenderer extends BaseRenderer
     private function getActionButton($index)
     {
         if ($index === null || $this->min === 0) {
+            
             return '<div class="d-flex">'.$this->renderRemoveButton(). $this->renderAddButton().'</div>';
         }
 
