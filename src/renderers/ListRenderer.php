@@ -85,10 +85,11 @@ class ListRenderer extends BaseRenderer
         }
 
         $cells = [];
-        $cells[] = Html::tag('td', '&nbsp;');
+       
         $cells[] = Html::tag('td', $this->renderAddButton(), [
             'class' => 'list-cell__button'
         ]);
+         $cells[] = Html::tag('td', '&nbsp;');
 
         return Html::tag('tfoot', Html::tag('tr', implode("\n", $cells)));
     }
